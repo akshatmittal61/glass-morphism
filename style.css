@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	width: 100vw;
+	overflow-x: hidden;
+}
+body {
+	width: 100vw;
+	min-height: 100vh;
+	font-family: "caveat", cursive, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("https://source.unsplash.com/500x500/?nature,water");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: column;
+	overflow-x: hidden;
+}
+body > * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	font-size: 3rem;
+	margin: 2rem 0;
+	color: #ffffff;
+}
+.rectangle {
+	width: 600px;
+	height: 370px;
+	background-image: linear-gradient(
+		to bottom left,
+		rgba(255, 255, 255, 0.14),
+		rgba(248, 248, 248, 0)
+	);
+	border: 3px solid rgba(255, 255, 255, 0.35);
+	box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.5);
+	box-sizing: 1px 1px 10px #00000035;
+	border-radius: 10px;
+	backdrop-filter: blur(10px) brightness(0.95);
+}
+img {
+	object-fit: cover;
+	max-width: 75%;
+	max-height: 75%;
+}
+.card {
+	width: 50vw;
+	height: 370px;
+	border-radius: 10px 0 10px 0;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.4),
+		rgba(255, 255, 255, 0.1)
+	);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 1px 20px -1px rgba(0, 0, 0, 0.1);
+}
+script {
+	display: none;
+}
